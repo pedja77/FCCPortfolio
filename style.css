@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding: 0 10%;
+}
+
+.menu-item {
+  display: block;
+}
+
+#navigation {
+  padding-bottom: 1em;
+}
+
+#menu {
+  margin-top: 1em auto;
+  padding-top: 1em;
+  display:block;
+  text-align: center;
+}
+
+#brand {
+  text-align: center;
+  margin-top: 1em auto;
+  display: block;
+
+}
+
+#portfolio-pic {
+  width:10em;
+  height: auto;
+  border-radius: 100%;
+  border: solid 0.2em red;
+  display: block;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+
+  .menu-item {
+    display: inline;
+  }
+  #menu {
+    margin-top: 0;
+    padding-top: 1em;
+    float:right;
+  }
+  #brand {
+    margin-top: 1em;
+    display: inline;
+    float: left;
+  }
+
+  #navigation {
+    position: fixed;
+    padding-bottom: 3.5em;
+  }
+
+  #about {
+    padding-top: 4.4em;
+  }
+
+  #about p {
+    vertical-align: middle;
+  }
+
+  #portfolio-pic {
+    width:10em;
+    height: auto;
+    border-radius: 100%;
+    border: solid 0.2em red;
+    display:inline;
+    float: left;
+    margin:0 1em;
+  }
+/*
+  .line hr {
+    height: auto;
+    background: url(images/tribal.png) center center no-repeat;
+    border:0;
+    width:inherit;
+  }
+  .line {
+    background: url(images/tribal.png) center no-repeat;
+    width: auto;
+    max-height: 6em;
+    padding: 0 10%;
+  }   */
+}
