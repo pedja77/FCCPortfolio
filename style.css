@@ -2,103 +2,115 @@
   box-sizing: border-box;
 }
 
-.container {
-  width: 100%;
-  padding: 0 10%;
+[class*="col-"] {
+    width: 100%;
 }
 
-.menu-item {
-  display: block;
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-#navigation {
-  padding-bottom: 1em;
+html {
+    font-family: "Lucida Sans", sans-serif;
 }
 
 #menu {
-  margin-top: 1em auto;
-  padding-top: 1em;
-  display:block;
+  list-style-type: none;
+}
+
+.menu-item {
   text-align: center;
 }
 
-#brand {
-  text-align: center;
-  margin-top: 1em auto;
+.menu-item a {
   display: block;
-
-}
-
-#portfolio-pic {
-  width:10em;
-  height: auto;
-  border-radius: 100%;
-  border: solid 0.2em red;
-  display: block;
-  margin: auto;
-}
-
-a {
+  padding: 0.5em;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+.menu-item a:hover {
+  background: red;
 }
 
-h1 {
-  text-align: center;
-}
+/****************************************************************/
+
+
 
 @media screen and (min-width: 600px) {
 
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  [class*="col-"] {
+      float: left;
+      padding: 1em;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+    padding: 0 10%;
+  }
+
+  #menu {
+    margin: 0;
+    padding: 0;
+    height: 2em;
+  }
+
   .menu-item {
     display: inline;
+    float: right;
   }
-  #menu {
-    margin-top: 0;
-    padding-top: 1em;
-    float:right;
-  }
+
   #brand {
-    margin-top: 1em;
-    display: inline;
-    float: left;
+    vertical-align: middle;
+    heig 2em;
+    margin-top: 0.5em;
   }
 
   #navigation {
     position: fixed;
-    padding-bottom: 3.5em;
+    top: 0;
+    background: #f1f1f1;
   }
 
   #about {
-    padding-top: 4.4em;
+    padding-top: 3em;
   }
-
-  #about p {
-    vertical-align: middle;
-  }
-
-  #portfolio-pic {
-    width:10em;
-    height: auto;
-    border-radius: 100%;
-    border: solid 0.2em red;
-    display:inline;
-    float: left;
-    margin:0 1em;
-  }
-/*
-  .line hr {
-    height: auto;
-    background: url(images/tribal.png) center center no-repeat;
-    border:0;
-    width:inherit;
-  }
-  .line {
-    background: url(images/tribal.png) center no-repeat;
-    width: auto;
-    max-height: 6em;
-    padding: 0 10%;
-  }   */
 }
+
+/*
+.header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color :#33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+*/
