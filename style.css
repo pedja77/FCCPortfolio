@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans|Roboto');
+
 * {
   box-sizing: border-box;
 }
@@ -12,16 +14,41 @@
     display: table;
 }
 
-html {
-    font-family: "Lucida Sans", sans-serif;
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  text-align: center;
 }
 
 #menu {
   list-style-type: none;
 }
 
+#brand {
+  font-family: 'Indie Flower', cursive;
+  font-size: 4em;
+  color: red;
+  margin:auto;
+}
+
+#brand-background {
+  background: url("./images/micro-uke-300px.png") no-repeat left top;
+  background-size: contain;
+}
+
+#portfolio-pic {
+  border: 0.2em solid blue;
+  border-radius: 3em;
+  width: 100%;
+  height: auto;
+}
+
 .menu-item {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
 }
 
 .menu-item a {
@@ -73,12 +100,11 @@ html {
   .menu-item {
     display: inline;
     float: right;
+    vertical-align: middle;
   }
 
   #brand {
     vertical-align: middle;
-    heig 2em;
-    margin-top: 0.5em;
   }
 
   #navigation {
@@ -89,6 +115,10 @@ html {
 
   #about {
     padding-top: 3em;
+  }
+
+  #about-h1 {
+    padding-top: 2em;
   }
 }
 
