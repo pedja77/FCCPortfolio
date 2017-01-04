@@ -40,7 +40,7 @@ h1 {
 
 #portfolio-pic {
   border: 0.2em solid blue;
-  border-radius: 3em;
+  border-radius: 50%;
   width: 100%;
   height: auto;
 }
